@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Font */
+  --font: "Red Hat Display", sans-serif;
+
+  /* Primary Colors */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral Colors */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  height: 100svh;
+  width: 100vw;
+  margin: 0;
+  background: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--pale-blue);
+}
+
+.main-container {
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 25em;
+  height: 40em;
+  background-color: var(--white);
+  border-radius: 1.5em;
+}
+
+.card-image {
+  background: url("./images/illustration-hero.svg");
+  width: 25em;
+  height: 13.7em;
+  border-radius: 1.5em 1.5em 0 0;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2em;
+}
+
+.card-title {
+  font-weight: 900;
+  font-size: 1.5em;
+  color: var(--dark-blue);
+}
+
+.card-message {
+  line-height: 1.6em;
+  color: var(--desaturated-blue);
+}
+
+.order-info {
+  width: 22em;
+  height: 5em;
+  background-color: var(--very-pale-blue);
+  border-radius: 0.7em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.plan-info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5em;
+}
+.plan-info p {
+  margin: 0;
+}
+.plan {
+  font-weight: 700;
+  color: var(--dark-blue);
+}
+.price {
+  color: var(--desaturated-blue);
+}
