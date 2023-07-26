@@ -121,6 +121,10 @@ body {
   margin: 2em 0 2em 0;
   box-shadow: 0 1em 2.5em 0 var(--desaturated-blue);
 }
+.payment:hover {
+  background-color: var(--white);
+  color: var(--bright-blue);
+}
 
 .cancel {
   color: var(--desaturated-blue);
@@ -131,4 +135,47 @@ body {
 
 .attribution {
   text-align: center;
+  margin-bottom: 4em;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+  }
+
+  .card {
+    width: 20em;
+    height: 35em;
+  }
+
+  .card-image {
+    width: 20em;
+    height: 10em;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .card-title {
+    margin-top: -0.5em;
+  }
+
+  .order-info {
+    width: 17em;
+  }
+
+  .plan-info {
+    margin: 0 2.2em 0 0;
+  }
+
+  .payment {
+    width: 19em;
+    height: 3.5em;
+  }
+
+  .attribution {
+    text-align: center;
+    margin-bottom: 5em;
+    font-size: 0.9em;
+  }
 }
